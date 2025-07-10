@@ -1,1 +1,97 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>40-Day Progress Tracker</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .progress-grid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 5px;
+            margin: 20px 0;
+        }
+        
+        .day-box {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #bdc3c7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .completed {
+            background-color: #27ae60;
+            color: white;
+        }
+        
+        .current {
+            background-color: #f39c12;
+            color: white;
+        }
+        
+        .week-header {
+            grid-column: 1 / -1;
+            background-color: #34495e;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>40-Day DevOps Journey Tracker</h1>
+        <p>Building something new every day</p>
+    </header>
+    
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../blog/index.html">Blog Posts</a>
+        <a href="index.html">Progress Tracker</a>
+    </nav>
+    
+    <main>
+        <h2>Progress Overview</h2>
+        <p><strong>Days Completed:</strong> 1 / 40</p>
+        <p><strong>Success Rate:</strong> 100%</p>
+        <p><strong>Current Streak:</strong> 1 day</p>
+        
+        <div class="progress-grid">
+            <div class="week-header">Week 1: Foundation</div>
+            <div class="day-box completed">1</div>
+            <div class="day-box">2</div>
+            <div class="day-box">3</div>
+            <div class="day-box">4</div>
+            <div class="day-box">5</div>
+            <div class="day-box">6</div>
+            <div class="day-box">7</div>
+            <div class="day-box"></div>
+            
+            <div class="week-header">Week 2: Version Control</div>
+            <div class="day-box">8</div>
+            <div class="day-box">9</div>
+            <div class="day-box">10</div>
+            <div class="day-box">11</div>
+            <div class="day-box">12</div>
+            <div class="day-box">13</div>
+            <div class="day-box">14</div>
+            <div class="day-box"></div>
+        </div>
+        
+        <h2>Recent Creations</h2>
+        <ul>
+            <li><strong>Day 1:</strong> DevOps Journey Blog - <a href="../blog/day-01-why-devops.html">Read Post</a></li>
+        </ul>
+        
+        <h2>Upcoming Projects</h2>
+        <ul>
+            <li><strong>Day 2:</strong> Linux Command Cheat Sheet Generator</li>
+            <li><strong>Day 3:</strong> VM Setup Automation Script</li>
+            <li><strong>Day 4:</strong> File System Navigator</li>
+        </ul>
+    </main>
+</body>
+</html>
